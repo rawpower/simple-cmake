@@ -1,4 +1,9 @@
-file(GLOB SRC_FILES *.cpp)
+
+if(wasm) # Wasm entry point
+  file(GLOB SRC_FILES main_wasm.cpp)
+else() # Standalone entry point
+  file(GLOB SRC_FILES main.cpp)
+endif()
 
 add_executable(main ${SRC_FILES})
 

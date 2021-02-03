@@ -1,2 +1,4 @@
 build
 .vscode
+wasm_playground/node_modules
+wasm_playground/dist

@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "esNext",
+    "sourceMap": true,
+    "lib": ["dom", "webworker"],
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+  },
+  "exclude": ["node_modules"]
+}
